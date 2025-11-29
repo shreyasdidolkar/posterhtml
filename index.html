@@ -6,39 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sticker</title>
     <style>
-.container{
-display: flex;
-justify-content: space-evenly;
-background-color: lightblue;
-}
-.item{
-background-color: lightcoral;
-height: 450px;
-width: 300px;
-border: 1px solid grey;
-margin: 5px;
-border-radius: 10px;
-}
-.mainimg{
-border-radius: 10px 10px 0px 0px ;
-}
-.heading{
-font-size: 20px;
-font-weight: 900;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-}
- </style>
+        body {
+            background-color: lightgray;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .item {
+            background-color: white;
+            height: 450px;
+            width: 300px;
+            border: 1px solid grey;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .item:hover {
+            border: 3px solid gray;
+        }
+
+        .mainimg {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .heading {
+            font-size: 20px;
+            font-weight: 900;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+        }
+
+        .sub-container {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .course-name {
+            background-color: aquamarine;
+            padding: 1px;
+            border-radius: 4px;
+        }
+
+        .project-discription {
+            font-size: 10px;
+            color: gray;
+        }
+
+        .Tech-stack {
+            display: flex;
+            margin: 2px;
+        }
+
+        .Tech {
+            background-color: wheat;
+            padding: 4px 10px;
+            margin: 5px;
+            font-size: 14px;
+            border-radius: 20px;
+            margin-right: 10px;
+            border: 1px solid;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div class="item">
-<img src="./card image.png" alt="card img" width="300px"  class="mainimg"/>
-<span class="heading">Road To Code</span>
+            <img src="./card image.png" alt="card img" width="300px" class="mainimg" />
+            <div class="sub-container">
+                <span class="heading">Road To Code</span>
+                <br />
+                <span class="course-name">Internship cohort program 5.0</span>
+                <p class="project-discription">"Theory internship cohort program" is a generic phrase describing
+                    internships that often bridge the
+                    gap between academic knowledge (theory)
+                    and real-world application, often within a structured group setting (cohort). </p>
+                <div class="Tech-stack">
+                    <span class="Tech">HTML</span>
+                    <span class="Tech">CSS</span>
+                    <span class="Tech">GitHub</span>
+                </div>
+            </div>
         </div>
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
-     
+
     </div>
 </body>
 
