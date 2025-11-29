@@ -13,12 +13,13 @@
         .container {
             display: flex;
             justify-content: space-evenly;
+            flex-wrap: wrap;
 
         }
 
         .item {
             background-color: white;
-            height: 450px;
+            height: 410px;
             width: 300px;
             border: 1px solid grey;
             margin: 5px;
@@ -69,6 +70,56 @@
             margin-right: 10px;
             border: 1px solid;
         }
+
+        .project-information {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-info {
+            font-size: 14px;
+        }
+
+        .user-profile {
+            border-radius: 50px;
+            margin-right: 5px;
+        }
+
+        .project-information {
+            display: flex;
+            align-items: center;
+        }
+
+        .calender-img {
+            margin-right: 5px;
+        }
+
+        .hr-line {
+            margin: 10px 0px;
+            border: grey 0.8px solid;
+        }
+
+        .additional {
+            justify-content: space-between;
+            display: flex;
+        align-items: center;
+        }
+
+        .additionalsub-info {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .seemore-info {
+            color: blue;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .arrow {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -89,11 +140,34 @@
                     <span class="Tech">CSS</span>
                     <span class="Tech">GitHub</span>
                 </div>
+                <div class="project-information">
+                    <div class="project-information">
+                        <img src="./calendar-icon.svg" alt="calenderimage" width="15px" class="calender-img">
+                        <span class="project-info">Mar 2024 - Apr 2024</span>
+                    </div>
+                    <div class="project-information">
+                        <img src="./mauli.jpg" alt="photo" height="20px" class="user-profile">
+                        <span class="project-info">Shreyas Didolkar</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="additional">
+                <div class="additionalsub-info"><img src="./clap.svg" alt="clap" width="20px">
+                    <span>123</span>
+                    <img src="./message.svg" alt="message" height="22px">
+                    <span>4</span>
+                    <img src="./share.svg" alt="share" height="20px">
+                </div>
+                <div class="seemore-info"><span>see more <img src="./arrow.png" alt="arrow" height="11px" width="15px"
+                            class="arrow">
+                    </span></div>
             </div>
         </div>
         <div class="item">2</div>
         <div class="item">3</div>
-        <div class="item">4</div>
+
 
     </div>
 </body>
